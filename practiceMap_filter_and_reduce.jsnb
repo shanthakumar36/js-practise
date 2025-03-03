@@ -10,19 +10,19 @@
   "cells": [
     {
       "code": "//to start\n const user=[\n   {firstName:'akshay',lastName:'saini',age:26},\n      {firstName:'donald',lastName:'trumph',age:75},\n      {firstName:'elon',lastName:'musk',age:50},\n      {firstName:'deepika',lastName:'padukone',age:26}\n   ];\n\nconst output= user.map(x => x.firstName +' '+x.lastName);\nscrib.show(output);\n",
-      "status": "[10]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "status": "[1]<br><span style=\"font-size:8px\">2ms<span></span></span>",
       "output": "[\n  \"akshay saini\",\n  \"donald trumph\",\n  \"elon musk\",\n  \"deepika padukone\"\n] <br>",
       "type": "code"
     },
     {
-      "code": " const user=[\n   {firstName:'akshay',lastName:'saini',age:26},\n      {firstName:'donald',lastName:'trumph',age:75},\n      {firstName:'elon',lastName:'musk',age:50},\n      {firstName:'deepika',lastName:'padukone',age:26}\n   ];\nconst output= user.reduce(function(acc,curr){\n  if(acc[curr.age]){\n\tacc[curr.age] = ++acc[curr.age];\n  }\n  else{\n\tacc[curr.age] = 1;\n  }\n  return acc;\n},{});\nscrib.show(output);\n\n",
-      "status": "[11]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": " const user=[\n   {firstName:'akshay',lastName:'saini',age:26},\n      {firstName:'donald',lastName:'trumph',age:75},\n      {firstName:'elon',lastName:'musk',age:50},\n      {firstName:'deepika',lastName:'padukone',age:26}\n   ];\nconst output= user.reduce(function(acc,curr){\n  if(acc[curr.age]){\n\tacc[curr.age] = ++acc[curr.age];\n  }\n  else{\n\tacc[curr.age]= 1;\n  }\n  return acc;\n},{});\nscrib.show(output);",
+      "status": "[2]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "{\n  \"26\": 2,\n  \"50\": 1,\n  \"75\": 1\n} <br>",
       "type": "code"
     },
     {
       "code": "",
-      "status": "[12]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "status": "",
       "output": "",
       "type": "code"
     }
