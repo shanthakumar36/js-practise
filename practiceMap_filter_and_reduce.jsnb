@@ -21,6 +21,18 @@
       "type": "code"
     },
     {
+      "code": "const user=[\n   {firstName:'akshay',lastName:'saini',age:26},\n      {firstName:'donald',lastName:'trumph',age:75},\n      {firstName:'elon',lastName:'musk',age:50},\n      {firstName:'deepika',lastName:'padukone',age:26}\n   ];\nconst output= user.filter(x=> x.age <30).map(x=>x.firstName);\nscrib.show(output);\n",
+      "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "[\n  \"akshay\",\n  \"deepika\"\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "const user=[\n   {firstName:'akshay',lastName:'saini',age:26},\n      {firstName:'donald',lastName:'trumph',age:75},\n      {firstName:'elon',lastName:'musk',age:50},\n      {firstName:'deepika',lastName:'padukone',age:26}\n   ];\nconst output= user.reduce((acc,curr)=>{\n  if(curr.age < 30){\n\tacc.push(curr.firstName);\n  }\n  return acc;\n},[]);\nscrib.show(output);",
+      "status": "[6]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "[\n  \"akshay\",\n  \"deepika\"\n] <br>",
+      "type": "code"
+    },
+    {
       "code": "",
       "status": "",
       "output": "",
