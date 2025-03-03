@@ -9,9 +9,9 @@
   "jsnbversion": "v0.1",
   "cells": [
     {
-      "code": "//to start",
-      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
-      "output": "",
+      "code": "//to start\n const user=[\n   {firstName:'akshay',lastName:'saini',age:26},\n      {firstName:'donald',lastName:'trumph',age:75},\n      {firstName:'elon',lastName:'musk',age:50},\n      {firstName:'deepika',lastName:'padukone',age:26}\n   ];\n\nconst output= user.map(x => x.firstName +' '+x.lastName);\nscrib.show(output);\n",
+      "status": "[1]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "output": "[\n  \"akshay saini\",\n  \"donald trumph\",\n  \"elon musk\",\n  \"deepika padukone\"\n] <br>",
       "type": "code"
     }
   ],
